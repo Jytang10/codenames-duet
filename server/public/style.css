@@ -1,0 +1,41 @@
+*,
+html {
+
+}
+
+body {
+  overflow: hidden;
+  height: 100vh
+}
+
+.header {
+  background-color: aquamarine;
+}
+
+.game-logo {
+  background-color: crimson;
+}
+
+.player-display {
+  background-color: yellow;
+}
+
+.answer-key {
+  background-color: skyblue;
+}
+
+.game-area {
+  background-color: aliceblue;
+}
+
+.stats-area {
+  background-color: antiquewhite;
+}
+
+.gameboard {
+  background-color: lime;
+}
+
+.message-area {
+  background-color: lightgray;
+}
