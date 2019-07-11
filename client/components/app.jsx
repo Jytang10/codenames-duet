@@ -5,7 +5,9 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      view: 'gameDisplay'
+      view: 'gameDisplay',
+      player: '1',
+      turn: '1'
     };
     this.setView = this.setView.bind(this);
   }
@@ -19,9 +21,9 @@ export default class App extends React.Component {
     if (this.state.view === 'lobby') {
       viewPage = <Lobby />;
     } else if (this.state.view === 'gameDisplay') {
-      viewPage = <GameDisplay />;
+      viewPage = <GameDisplay playerID={this.state.player} turn={this.state.turn} />;
     }
 
-    return <div>{viewPage}</div>
+    return <div>{viewPage}</div>;
   }
 }
